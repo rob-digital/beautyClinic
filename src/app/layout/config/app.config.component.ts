@@ -12,6 +12,7 @@ export class AppConfigComponent {
     scales: number[] = [12, 13, 14, 15, 16];
     newTheme: string = "";
     newColour: string = "";
+    @Input() isMobile: boolean;
 
     constructor(
         public layoutService: LayoutService,
@@ -21,7 +22,6 @@ export class AppConfigComponent {
             if (layoutService.myNewThemeName() && layoutService.myNewThemeColour()) {
                 this.newTheme = layoutService.myNewThemeName();
                 this.newColour = layoutService.myNewThemeColour();
-                console.log('this.newColour:', this.newColour)
                 this.changeTheme(this.newTheme, this.newColour);
             }
 

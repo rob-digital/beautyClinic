@@ -1,4 +1,4 @@
-<ul class="layout-menu flex flex-column justify-content-between min-h-full">
+<ul class="layout-menu flex flex-column min-h-full">
     <ng-container *ngFor="let item of model; let i = index;">
         <li app-menuitem *ngIf="!item.separator" [item]="item" [index]="i" style="font-size: large;" [root]="true"></li>
         <li *ngIf="item.separator" class="menu-separator"></li>
@@ -12,7 +12,7 @@
               label="Go light"
               icon="pi pi-sun"
               iconPos="right"
-              class="p-button-rounded p-button-outlined btnGeneral"
+              class="p-button-rounded p-button-outlined btnGeneral mt-5"
               (click)="setTheme('saga-blue', 'light')"
             >
         </button>
@@ -24,7 +24,7 @@
                 label="Go dark"
                 icon="pi pi-moon"
                 iconPos="right"
-                class="p-button-rounded p-button-outlined btnGeneral"
+                class="p-button-rounded p-button-outlined btnGeneral mt-5"
                 (click)="setTheme('arya-blue', 'dark')"
               >
         </button>

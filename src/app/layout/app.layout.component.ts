@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, Renderer2, ViewChild } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter, Subscription } from 'rxjs';
 import { LayoutService } from "./service/app.layout.service";
@@ -9,7 +9,7 @@ import { AppTopBarComponent } from './app.topbar.component';
     selector: 'app-layout',
     templateUrl: './app.layout.component.html'
 })
-export class AppLayoutComponent implements OnDestroy {
+export class AppLayoutComponent implements OnInit, OnDestroy {
 
     overlayMenuOpenSubscription: Subscription;
 
@@ -20,6 +20,9 @@ export class AppLayoutComponent implements OnDestroy {
     bgFooter: string = "black";
 
     year: number = new Date().getFullYear();
+
+    isMobile: boolean = undefined;
+
 
     @ViewChild(AppSidebarComponent) appSidebar!: AppSidebarComponent;
 
@@ -111,6 +114,14 @@ export class AppLayoutComponent implements OnDestroy {
             'p-input-filled': this.layoutService.config().inputStyle === 'filled',
             'p-ripple-disabled': !this.layoutService.config().ripple
         }
+    }
+
+    ngOnInit(): void {
+        if (this.layoutService.isMyMobile())
+            this.isMobile = true;
+        else
+            this.isMobile = false;
+
     }
 
     ngOnDestroy() {

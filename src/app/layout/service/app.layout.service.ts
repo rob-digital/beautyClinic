@@ -112,7 +112,7 @@ export class LayoutService {
         return window.innerWidth > 991;
     }
     isMyMobile() {
-        return window.innerWidth <= 768;
+        return window.innerWidth <= 991;
     }
 
     isMobile() {

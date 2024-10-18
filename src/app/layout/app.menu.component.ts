@@ -14,7 +14,6 @@ export class AppMenuComponent implements OnInit {
 
     constructor(public layoutService: LayoutService) {
         effect(() => {
-            console.log('layoutService.myNewThemeName():', layoutService.myNewThemeName())
             if (layoutService.myNewThemeName() == 'arya-blue' && layoutService.myNewThemeColour() == 'dark') {
                 this.newColourTheme = 'dark'
             } else if ((layoutService.myNewThemeName() == 'saga-blue' && layoutService.myNewThemeColour() == 'light') || (layoutService.myNewThemeName() == '' && layoutService.myNewThemeColour() == '')) {
