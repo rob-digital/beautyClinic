@@ -1,0 +1,265 @@
+/* You can add global styles to this file, and also import other style files */
+
+$gutter: 1rem; //for primeflex grid system
+@import "assets/layout/styles/layout/layout.scss";
+
+/* PrimeNG */
+@import "../node_modules/primeng/resources/primeng.min.css";
+@import "../node_modules/primeflex/primeflex.scss";
+@import "../node_modules/primeicons/primeicons.css";
+
+/* Demos */
+@import "assets/main/styles/flags/flags.css";
+// @import "assets/main/styles/badges.scss";
+@import "assets/main/styles/code.scss";
+
+.separator {
+//   padding: 5rem 0;
+  background-color: var(--gray-300);
+  // margin: 5rem 0 !important;
+  width: 100vw !important;
+  margin-left: -31px !important;
+  margin-right: -14px !important;
+
+  .min-content-block {
+        padding-left: 28px;
+        padding-right: 14px;
+    }
+}
+p-button span {
+    font-weight: 600 !important;
+}
+.missionStatement {
+    // background-color: #0093E9;
+    // background-image: linear-gradient(160deg, var(--primary-color) 0%, #80D0C7 100%);
+    background-image: url("./assets/main/images/gallery/oooscillate.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btnGeneral {
+    width: 100% !important;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+
+.layout-topbar .layout-topbar-menu ul {
+    display: flex !important;
+}
+.layout-topbar .layout-topbar-menu ul  li {
+    padding: 0 2rem !important;
+    list-style-type: none;
+}
+.layout-topbar .layout-topbar-menu  li div:first-child {
+    display: none !important;
+}
+.layout-topbar .layout-topbar-menu  ul a.active-route {
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+
+  .layout-topbar .layout-topbar-menu  ul a {
+    font-weight: 500;
+    color: var(--gray-50);
+  }
+
+  .layout-menu-topbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .layout-menu-topbar .layout-root-menuitem > .layout-menu-topbaritem-root-text {
+    font-size: 0.857rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--surface-900);
+    margin: 0.75rem 0;
+  }
+  .layout-menu-topbar .layout-root-menuitem > a {
+    display: none;
+  }
+  .layout-menu-topbar a {
+    user-select: none;
+  }
+  .layout-menu-topbar a.active-menuitem > .layout-submenu-toggler {
+    transform: rotate(-180deg);
+  }
+  .layout-menu-topbar li.active-menuitem > a .layout-submenu-toggler {
+    transform: rotate(-180deg);
+  }
+  .layout-menu-topbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .layout-menu-topbar ul a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    outline: 0 none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  .layout-menu-topbar ul a .layout-menu-topbaritem-icon {
+    margin-right: 0.5rem;
+  }
+  .layout-menu-topbar ul a .layout-submenu-toggler {
+    font-size: 75%;
+    margin-left: auto;
+    transition: transform 0.2s;
+  }
+  .layout-menu-topbar ul a.active-route {
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  .layout-menu-topbar ul a:hover {
+    background-color: var(--surface-hover);
+  }
+  .layout-menu-topbar ul a:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    transition: box-shadow 0.2s;
+    box-shadow: inset var(--focus-ring);
+  }
+  .layout-menu-topbar ul ul {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .layout-menu-topbar ul ul li a {
+    margin-left: 1rem;
+  }
+  .layout-menu-topbar ul ul li li a {
+    margin-left: 2rem;
+  }
+  .layout-menu-topbar ul ul li li li a {
+    margin-left: 2.5rem;
+  }
+  .layout-menu-topbar ul ul li li li li a {
+    margin-left: 3rem;
+  }
+  .layout-menu-topbar ul ul li li li li li a {
+    margin-left: 3.5rem;
+  }
+  .layout-menu-topbar ul ul li li li li li li a {
+    margin-left: 4rem;
+  }
+
+
+  .image-colRight {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .text-colLeft {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .image-colLeft {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .text-colRight {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  // small size background
+  @media screen and (max-width: 991px) {
+      .layout-sidebar {
+          display: block;
+        }
+        .separator {
+            width: unset !important;
+        }
+        .col-12 {
+            padding: 0.5rem;
+        }
+        .introImage {
+            background-size: 88rem;
+            height: 28rem;
+        }
+        .introCard {
+            max-width: 100%;
+          }
+        .image-colRight {
+          width: 100%;
+          margin-left: 0;
+        }
+        .text-colLeft {
+          width: 100%;
+          margin-left: 0;
+        }
+        .image-colLeft {
+          width: 100%;
+          margin-left: 0;
+        }
+        .text-colRight {
+          width: 100%;
+          margin-left: 0;
+        }
+    }
+
+      // medium size background
+    @media screen and (min-width: 992px) and (max-width: 1440px) {
+        .p-link.layout-menu-button.layout-topbar-button {
+            display: none;
+        }
+        .layout-sidebar {
+            display: none;
+        }
+      .introImage {
+          background-size: 110%;
+          height: 32rem;
+      }
+    }
+
+    @media screen and (min-width: 1441px) {
+      .p-link.layout-menu-button.layout-topbar-button {
+          display: none;
+      }
+      .layout-sidebar {
+          display: none;
+      }
+      .introImage {
+          background-size: 100%;
+          height: 35rem;
+      }
+    }
+
+  .introImage {
+    background-position: center !important;
+    margin-top: 1rem;
+}
+
+
+
+  .layout-topbar div:first-child {
+    display: flex;
+    width: 100%;
+  }
+  @media screen and (min-width: 1960px) {
+ .layout-topbar div:first-child {
+      width: 1504px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .introCard {
+        max-width: 310px;
+      }
+  }
+
+
+
+
+
+.footerLogo {
+    width: inherit;
+}
+.black {
+    background-color: black;
+}

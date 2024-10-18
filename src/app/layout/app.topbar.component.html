@@ -1,0 +1,28 @@
+
+<div class="layout-topbar" [ngClass]="footerBackground">
+        <div class="justify-content-between">
+            <a class="layout-topbar-logo pl-5" routerLink="">
+                <img src="assets/main/images/gallery/2.png" alt="logo">
+                <!-- <img src="assets/layout/images/{{layoutService.config().colorScheme === 'light' ? 'lips' : 'lips'}}.svg" alt="logo"> -->
+                <span class="text-white-alpha-90">NYC</span>
+            </a>
+
+            <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">
+                <i class="pi pi-bars"></i>
+            </button>
+
+            <!-- <button #topbarmenubutton class="p-link layout-topbar-menu-button layout-topbar-button" (click)="layoutService.showProfileSidebar()">
+                <i class="pi pi-ellipsis-v"></i>
+            </button> -->
+
+            <div #topbarmenu class="layout-topbar-menu text-lg" [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
+                <ul>
+                @for (item of items; track item.label) {
+                        <li app-menuitem  [item]="item" [index]="i" >
+
+                        </li>
+                }
+                </ul>
+            </div>
+    </div>
+</div>

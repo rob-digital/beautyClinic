@@ -1,0 +1,45 @@
+// add styling
+
+style="background-color: var(--cyan-300)"
+<div class="col-12 sm:col-6" style="background-image: url('../../../../assets/demo/images/intro/spa.png'); background-size: cover; "></div>
+
+if [(ngModel)] doesn't work you need to add
+            import { FormsModule } from '@angular/forms';
+to this module
+==================================================
+style
+
+[styleClass]=" darkMode ? 'myChipDark': 'myChipLight'"
+[tableStyle]="{'min-width': '50rem'}"
+[style]="{width: '450px'}"
+[class]="{ 'text-white' : darkMode }"
+[class]="{ 'opacity-50' : node.data.awayTeam.goals < node.data.homeTeam.goals }"
+[ngClass]="{ 'ng-invalid ng-dirty' : !canSubmitPasswordSignIn && canSubmitPasswordSignIn != null }"
+[ngClass]="{ 'line-through' : node.data.awayTeam.goals > node.data.homeTeam.goals }"
+[ngClass]="!darkMode ? 'border-bottom-1 border-gray-300' : null"
+==================================================
+HTML tag
+
+alt="{{ game.city }}
+[type]="selectedGraph != null ? selectedGraph : 'line'"
+=================================================
+
+valueColor="var(--cyan-300)"
+
+=================================================
+remove whole line with specific text:
+^.*dateAdded.*?\n  -> date added
+
+=================================================
+Can't bind to 'styleClass' since it isn't a known property of 'div'
+
+You need to import commonModule
+
+@NgModule({
+  imports: [CommonModule],
+  ...
+})
+=====================================================
+
+semi-permanent makeup
+
