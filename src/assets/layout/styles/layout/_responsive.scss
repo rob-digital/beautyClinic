@@ -72,7 +72,21 @@
         }
     }
 }
+@media (max-width: 1199px) {
+    .separator {
+        margin-left: -14px !important;
+        .min-content-block {
+            padding-left: 14px !important;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .separator {
+        padding-left: 1rem;
+        margin-left: -14px !important;
 
+    }
+}
 @media (max-width: 991px) {
     .blocked-scroll {
         overflow: hidden;
@@ -81,10 +95,11 @@
         width: 100%  !important;
         flex-direction: column;
     }
+    // .contactDetails {
+    //     margin-top: -20%;
+    // }
 
-    .separator {
-        margin-left: -14px !important;
-    }
+
     .introSection {
         flex-direction: column-reverse !important;
     }

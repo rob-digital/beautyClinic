@@ -28,6 +28,7 @@ import { ButtonModule } from 'primeng/button';
         AppMenuComponent,
         AppSidebarComponent,
         AppLayoutComponent,
+        
 
     ],
     imports: [

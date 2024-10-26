@@ -1,0 +1,14 @@
+.min-content-block {
+    padding-bottom: 55px !important;
+}
+@media (min-width: 992px) {
+    .min-content-block {
+        padding-bottom: 85px !important;
+        width: 90% !important;
+        margin-left: 5%;
+    }
+}
+.contactDetails {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+}

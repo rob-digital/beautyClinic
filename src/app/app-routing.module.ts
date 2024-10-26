@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { NotfoundComponent } from './main/components/notfound/notfound.component';
 import { AppLayoutComponent } from "./layout/app.layout.component";
 import { TreatmentsComponent } from './main/components/treatments/treatments.component';
+import { AboutComponent } from './main/components/about/about.component';
+import { ContactComponent } from './main/components/contact/contact.component';
 
 @NgModule({
     imports: [
@@ -12,6 +14,8 @@ import { TreatmentsComponent } from './main/components/treatments/treatments.com
                 children: [
                     { path: '', loadChildren: () => import('./main/components/dashboard/dashboard.module').then(m => m.DashboardModule) },
                     { path: 'treatments', component: TreatmentsComponent },
+                    { path: 'about', component: AboutComponent },
+                    { path: 'contact', component: ContactComponent },
                 ]
             },
             { path: 'auth', loadChildren: () => import('./main/components/auth/auth.module').then(m => m.AuthModule) },
