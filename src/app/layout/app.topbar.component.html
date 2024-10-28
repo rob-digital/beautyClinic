@@ -2,9 +2,10 @@
 <div class="layout-topbar" [ngClass]="footerBackground">
         <div class="justify-content-between">
             <a class="layout-topbar-logo pl-5" routerLink="">
-                <img src="assets/main/images/gallery/2.png" alt="logo">
+                <!-- <img src="assets/main/images/logo/NYC_Logo_Transparent-06.png" alt="logo"> -->
+                <img class="h-4rem" src="../../assets/main/images/gallery/logo/NYC_Logo_Transparent-06.png" alt="logo">
+                
                 <!-- <img src="assets/layout/images/{{layoutService.config().colorScheme === 'light' ? 'lips' : 'lips'}}.svg" alt="logo"> -->
-                <span class="miniLogo text-white">N-Y-C</span>
             </a>
 
             <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">

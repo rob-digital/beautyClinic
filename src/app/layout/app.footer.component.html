@@ -1,14 +1,19 @@
 <div [ngClass]="footerBackground">
     <div class="py-6 px-4 mx-0 mt-8 lg:mx-8 ">
         <div class="grid justify-content-between text-white">
-            <div class="col-12 md:col-3 lg:col-4 flex flex-column align-items-center md:align-items-start mb-5">
-                <div class="flex align-content-center">
-                    <span class="text-white text-3xl mt-3 align-self-center mainTitleFont">New You Cosmetologie</span>
-                    <img src="assets/main/images/gallery/2.png" width="auto" height="60px" alt="logo">
-                </div>
-                <h2 class="text-white text-xl mt-1">clinic and academy</h2>
-                <hr class="bg-white border-bottom-1 max-w-19rem lg:w-30rem">
-                <p class="text-xl">m: 0778 778 778</p>
+            <div class="col-12 md:col-4 lg:col-4 flex flex-column align-items-center md:align-items-start mb-5">
+                <section class="companyInfoFooter hidden md:flex z-5 pt-4 w-full flex flex-column justify-content-center align-items-center">
+                    <img src="../../assets/main/images/gallery/logo/NYC_Logo_Transparent-06.png" class="h-5rem md:h-7rem lg:h-10rem" alt="logo">
+                    <span class=" companyName_mobile  block text-4xl sm:text-3xl lg:text-4xl xl:text-6xl font-bold mb-1">New You Cosmetologie</span>
+                    <div class="flex justify-content-center w-full h">
+                        <span
+                          class="hr-before-mobile bg-white"></span>
+                        <h2 class="mainTitleSlogan text-white mt-0 text-sm font-bold mb-3 uppercase">CLINIC & ACADEMY</h2>
+                        <span class="hr-after-mobile bg-white"></span>
+                    </div> 
+                    <hr class="bg-white border-bottom-1 w-full">
+                    <p class="text-xl">m: 0778 778 778</p>
+                </section>
                 <a  class="flex w-100 flex-wrap align-items-center justify-content-center md:justify-content-start md:mb-0 mb-3 cursor-pointer">
                     <!-- <h4 class="font-medium text-3xl text-300">Beauty clinic</h4> -->
                     <!-- <img class="footerLogo w-6rem" src="assets/layout/images/{{layoutService.config().colorScheme === 'light' ? 'lips' : 'lips'}}.svg" alt="logo"> -->
@@ -16,8 +21,8 @@
                 </a>
             </div>
 
-            <div class="col-12 md:col-9 lg:col-6">
-                <div class="grid text-center md:text-left md:justify-content-end lg:justify-content-evenly">
+            <div class="col-12 md:col-8 lg:col-6">
+                <div class="grid text-center md:text-left md:justify-content-center lg:justify-content-evenly">
                     <div class="col-12 md:col-3">
                         <h4 class="font-medium text-2xl line-height-3 mb-3 text-300 text-gray-400">Company</h4>
                         <a class="line-height-3 text-lg block cursor-pointer mb-2 text-100 text-gray-400">About Us</a>
@@ -54,7 +59,7 @@
 
         </div>
         <div class=" text-gray-200 w-100 mt-5 flex flex-column align-items-center justify-content-center">
-            <div class=" text-bluegray-700" > &copy; <span id="year">N-Y-C {{ year }}</span> </div>
+            <div class=" text-bluegray-700" > &copy; <span id="year">NYC {{ year }}</span> </div>
             <div class=" text-bluegray-700">All Rights Reserved.</div>
         </div>
     </div>

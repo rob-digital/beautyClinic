@@ -30,30 +30,72 @@ p-button span {
     font-weight: 600 !important;
 }
 @font-face {
-    font-family: 'Arizonia-Regular';
-    src: url('../src/assets/fonts/arizonia/Arizonia-Regular.ttf');
+    font-family: 'Bigilla';
+    src: url('../src/assets/fonts/bigilla/Bigilla.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'PlayfairDisplay-Regular';
-    src: url('../src/assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+    font-family: 'Montserrat-Light';
+    src: url('../src/assets/fonts/Montserrat/static/Montserrat-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Caveat';
-    src: url('../src/assets/fonts/Montserrat/static/Montserrat-Bold.ttf');
+    font-family: 'Raleway-Light';
+    src: url('../src/assets/fonts/Raleway/Raleway-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
-.mainTitleFont, .miniLogo {
-    font-family: 'Arizonia-Regular';
+.companyName_web, .miniLogo {
+    font-family: 'Bigilla';
+    justify-self: center;
+    white-space: nowrap;
 }
+.companyName_mobile, #year {
+    font-family: 'Bigilla';
+    justify-self: center;
+}
+.companyInfoFooter img {
+  // height: 5.5rem;
+  margin-top: -3.5rem;
+}
+.mainTitleSlogan {
+    font-family: 'Raleway-Light';
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+}
+.hr-before-web {
+  height: 1px;
+  background-color: black;
+  width: 90%;
+  // margin-right: 20px;
+  // margin-top: 10px;
+  margin: 10px 20px 0 10%;
+}
+.hr-after-web {
+  height: 1px;
+  background-color: black;
+  width: 90%;
+  // margin-left: 20px;
+  // margin-top: 10px;
+  margin: 10px 10% 0 20px;
+}
+.hr-before-mobile {
+  height: 1px;
+  background-color: black;
+  width: 90%;
+  margin: 8px 20px 0 10%;
 
-// .mainTitleSlogan {
-//     font-family: 'PlayfairDisplay-Regular';
-// }
+}
+.hr-after-mobile {
+  height: 1px;
+  background-color: black;
+  width: 90%;
+  margin: 8px 10% 0 20px;
+
+}
 // .privateHeaderBold {
 //     font-family: 'PlayfairDisplay-Regular';
 //     font-weight: 900 !important;
@@ -376,7 +418,7 @@ p-button span {
         display: block;
       }
       .letsChat {
-          font-size: 58px;
+          font-size: 48px;
       }
 }
 
