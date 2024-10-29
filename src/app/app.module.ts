@@ -11,11 +11,11 @@ import { IconService } from './main/service/icon.service';
 import { NodeService } from './main/service/node.service';
 import { PhotoService } from './main/service/photo.service';
 
-import { AboutComponent } from './main/components/about/about.component';
 import { ButtonModule } from 'primeng/button';
 import { StyleClassModule } from 'primeng/styleclass';
 import { CommonModule } from '@angular/common';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { AboutComponent } from './main/components/about/about.component';
 @NgModule({
     declarations: [AppComponent, NotfoundComponent, AboutComponent],
     imports: [

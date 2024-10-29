@@ -1,5 +1,9 @@
-<div class="flex flex-wrap align-items-center justify-content-start w-full">
+<!-- <div class="flex flex-wrap align-items-center justify-content-start w-full">
     <div class="introImage bg-no-repeat w-full" style="background-image: url('../../../../assets/main/images/gallery/treatment_.jpg');"></div>
+</div> -->
+<div class=" w-full overflow-hidden relative flex justify-content-center align-content-center treatments_introImageContainer">
+    <!-- <img src="assets/main/images/gallery/images/contact_intro_{{ layoutService.isMyMobile() ? 'mobile' : 'web' }}.jpg" alt="Image" class="md:ml-auto block md:h-full"> -->
+    <div class="introImageTreatments_{{ layoutService.isMyMobile() ? 'mobile' : 'web' }} bg-no-repeat w-full"></div>
 </div>
 
 <div class="layout-main-container">
@@ -7,16 +11,135 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, quod quas pariatur numquam aperiam ea beatae nobis, et perspiciatis nostrum cupiditate corrupti porro id odio dolorum? Voluptatibus dignissimos modi expedita, delectus error quisquam debitis sunt velit non a voluptas nostrum, vel voluptate porro inventore incidunt itaque culpa et at pariatur, esse iusto. Minus at voluptate repellendus, omnis natus ducimus pariatur nihil illum officia delectus vel, cumque placeat aperiam earum obcaecati quibusdam tempore? Molestias fugiat quo commodi quibusdam cupiditate delectus, iure sunt optio inventore ullam dolores? Cumque molestiae labore ullam! A autem nisi necessitatibus harum officia provident veritatis et laborum mollitia repudiandae quisquam veniam vero iusto eveniet quas tenetur amet dolorum, culpa sunt nam saepe similique! Unde sit delectus sunt aperiam vero necessitatibus beatae nobis iure. Nesciunt ipsa sit nam est amet tempora. Fugit quia atque perferendis doloribus sed quam. Ea, ullam expedita sapiente, cupiditate beatae atque quo architecto cumque vero quae rerum veritatis alias nesciunt aut molestiae ratione tempora totam dolore suscipit inventore hic deleniti. Obcaecati vitae quisquam incidunt. Ea necessitatibus enim vel nihil tenetur, dolore pariatur dicta sunt maiores explicabo error praesentium, delectus esse aliquid temporibus magnam id sapiente velit quaerat exercitationem. Eaque in nemo quam qui error quia?</p>
     </div>
 
-    <div class="block animation-duration-1000">
-        <div class="flex mt-5 separator md:my-8 py-3 md:py-8">
-            <div class="surface-section px-4 py-8 md:px-6 lg:px-8">
-                <div class="text-700 text-center">
-                    <div class="text-blue-600 font-bold mb-3"><i class="pi pi-discord"></i>&nbsp;POWERED BY DISCORD</div>
-                    <div class="text-900 font-bold text-5xl mb-3">Join Our Design Community</div>
-                    <div class="text-700 text-2xl mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</div>
-                    <button pButton pRipple label="Join Now" icon="pi pi-discord" class="font-bold px-5 py-3 p-button-raised p-button-rounded white-space-nowrap"></button>
+    <div class="surface-ground px-4 py-8 md:px-6 lg:px-8">
+        <div class="text-900 font-bold text-6xl mb-4 text-center">Pricing Plans</div>
+        <div class="text-700 text-xl mb-6 text-center line-height-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos.</div>
+    
+        <div class="grid">
+            <div class="col-12 sm:col-6 lg:col-4">
+                <div class="p-3 h-full">
+                    <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+                        <div class="text-900 font-medium text-xl mb-2">Hair removal</div>
+                        <div class="text-600">Description</div>
+                        <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                        <div class="flex align-items-center">
+                            <span class="font-bold text-2xl text-900">£9</span>
+                        </div>
+                        <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                        <ul class="list-none p-0 m-0 flex-grow-1">
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Arcu vitae elementum</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Dui faucibus in ornare</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Morbi tincidunt augue</span>
+                            </li>
+                        </ul>
+                        <hr class="mb-3 mx-0 border-top-1 border-none surface-border mt-auto" />
+                        <!-- <button pButton pRipple label="Buy Now" class="p-3 w-full mt-auto"></button> -->
+                        <button
+                        pButton
+                        pRipple
+                        label="Book now"
+                        class="btnGeneral align-self-center font-bold px-5 py-3 shadow-3 p-button-rounded white-space-nowrap">
+                      </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 sm:col-6 lg:col-4">
+                <div class="p-3 h-full">
+                    <div class="shadow-2 p-3 h-full flex flex-column surface-card" style="border-radius: 6px">
+                        <div class="text-900 font-medium text-xl mb-2">Nose correction</div>
+                        <div class="text-600">Description</div>
+                        <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                        <div class="flex align-items-center">
+                            <span class="font-bold text-2xl text-900">£29</span>
+                        </div>
+                        <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                        <ul class="list-none p-0 m-0 flex-grow-1">
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Arcu vitae elementum</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Dui faucibus in ornare</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Morbi tincidunt augue</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Duis ultricies lacus sed</span>
+                            </li>
+                        </ul>
+                        <hr class="mb-3 mx-0 border-top-1 border-none surface-border" />
+                        <!-- <button pButton pRipple label="Buy Now" class="p-3 w-full"></button> -->
+                        <button
+                        pButton
+                        pRipple
+                        label="Book now"
+                        class="btnGeneral align-self-center font-bold px-5 py-3 shadow-3 p-button-rounded white-space-nowrap">
+                      </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 sm:col-6 lg:col-4">
+                <div class="p-3 h-full">
+                    <div class="shadow-2 p-3 flex flex-column surface-card" style="border-radius: 6px">
+                        <div class="text-900 font-medium text-xl mb-2">Face replacement</div>
+                        <div class="text-600">Description</div>
+                        <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                        <div class="flex align-items-center">
+                            <span class="font-bold text-2xl text-900">£49</span>
+                        </div>
+                        <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+                        <ul class="list-none p-0 m-0 flex-grow-1">
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Arcu vitae elementum</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Dui faucibus in ornare</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Morbi tincidunt augue</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Duis ultricies lacus sed</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Imperdiet proin</span>
+                            </li>
+                            <li class="flex align-items-center mb-3">
+                                <i class="pi pi-check-circle text-green-500 mr-2"></i>
+                                <span class="text-900">Nisi scelerisque</span>
+                            </li>
+                        </ul>
+                        <hr class="mb-3 mx-0 border-top-1 border-none surface-border" />
+                        <!-- <button pButton pRipple label="Buy Now" class="p-3 w-full p-button-outlined"></button> -->
+                        <button
+                        pButton
+                        pRipple
+                        label="Book now"
+                        class="btnGeneral align-self-center font-bold px-5 py-3 shadow-3 p-button-rounded white-space-nowrap">
+                      </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+   
 </div>

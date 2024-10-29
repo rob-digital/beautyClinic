@@ -1,0 +1,19 @@
+.treatments_introImageContainer {
+
+    height: 30rem;
+    .introImageTreatments_web {
+       background-position-y: bottom !important;
+       background-position-x: center !important;
+       background: url("../../../../assets/main/images/gallery/treatment_.jpg");
+       margin-top: 1rem;
+       background-size: cover;
+   }
+   .introImageTreatments_mobile {
+       background-position: bottom;
+       background: url("../../../../assets/main/images/gallery/treatment_.jpg");
+       margin-top: 1rem;
+       background-position-y: bottom !important;
+       background-position-x: center !important;
+       background-size: cover;
+   }
+}
