@@ -63,37 +63,42 @@ p-button span {
 .mainTitleSlogan {
     font-family: 'Raleway-Light';
     position: relative;
-    white-space: nowrap;
+    white-space: nowrap !important;
     text-align: center;
+}
+.mainTitleSlogan_footer {
+  white-space: nowrap !important;
+}
+.mainTitleSlogan_top1 {
+  white-space: nowrap !important;
+}
+.mainTitleSlogan_top2 {
+  white-space: nowrap !important;
 }
 .hr-before-web {
   height: 1px;
   background-color: black;
   width: 90%;
-  // margin-right: 20px;
-  // margin-top: 10px;
-  margin: 10px 20px 0 10%;
+  margin-top: 10px;
 }
 .hr-after-web {
   height: 1px;
   background-color: black;
   width: 90%;
-  // margin-left: 20px;
-  // margin-top: 10px;
-  margin: 10px 10% 0 20px;
+  margin-top: 10px;
 }
 .hr-before-mobile {
   height: 1px;
   background-color: black;
   width: 90%;
-  margin: 8px 20px 0 10%;
+  margin-top: 8px;
 
 }
 .hr-after-mobile {
   height: 1px;
   background-color: black;
   width: 90%;
-  margin: 8px 10% 0 20px;
+  margin-top: 8px; 
 
 }
 // .privateHeaderBold {

@@ -71,6 +71,9 @@
             display: none;
         }
     }
+    .bottomSloganBlock_footer {
+        width: 63%;
+    }
 }
 @media (max-width: 1199px) {
     .separator {
@@ -141,6 +144,10 @@
             }
         }
     }
+    .bottomSloganBlock_footer {
+        width: 100%;
+    }
+
 }
 @media screen and (min-width: 769px) and (max-width: 991) {
     .layout-main-container {
@@ -153,7 +160,12 @@
         }
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
+.bottomSloganBlock_web1 {
+    width: 66%;
+}
+}
+@media screen and (max-width: 767px) {
     .introImage {
         position: relative !important;
 
@@ -164,10 +176,19 @@
             right: 0;
         }
     }
+
+}
+@media screen and (max-width: 575px) {
+ 
     .hr-before-mobile {
         margin-left: 20% !important;
     }
     .hr-after-mobile {
         margin-right: 20% !important;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.companyName_mobile {
+    font-size: 24px !important;
+}
 }
