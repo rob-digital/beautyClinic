@@ -85,9 +85,8 @@
 }
 @media (min-width: 1200px) {
     .separator {
-        padding-left: 1rem;
-        margin-left: -14px !important;
-
+        padding-left: 16px !important;
+        padding-right: 0 !important;
     }
 }
 @media (max-width: 991px) {
