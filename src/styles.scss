@@ -36,8 +36,8 @@ p-button span {
     font-style: normal;
 }
 @font-face {
-    font-family: 'Montserrat-Light';
-    src: url('../src/assets/fonts/Montserrat/static/Montserrat-Light.ttf');
+    font-family: 'Montserrat-Medium';
+    src: url('../src/assets/fonts/Montserrat/static/Montserrat-Medium.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -47,20 +47,37 @@ p-button span {
     font-weight: normal;
     font-style: normal;
 }
-.companyName_web, .miniLogo {
+.companyName_web {
     font-family: 'Bigilla';
     justify-self: center;
     white-space: nowrap;
+    color: #000;
 }
-.companyName_mobile, #year {
+body {
+    font-family: 'Montserrat-Medium';
+}
+button {
+    font-family: inherit;
+    font-weight: 600 !important;
+}
+.nycCopyrights {
+    font-family: 'Bigilla';
+}
+.companyNameFooter_mobile  {
     font-family: 'Bigilla';
     justify-self: center;
+    color: #fff;
+}
+.companyName_mobile  {
+    font-family: 'Bigilla';
+    justify-self: center;
+    color: #000;
 }
 .companyInfoFooter img {
   // height: 5.5rem;
   margin-top: -3.5rem;
 }
-.mainTitleSlogan {
+.mainTitleSlogan_top1, .mainTitleSlogan_top2, .mainTitleSlogan_footer  {
     font-family: 'Raleway-Light';
     position: relative;
     white-space: nowrap !important;
@@ -98,7 +115,7 @@ p-button span {
   height: 1px;
   background-color: black;
   width: 90%;
-  margin-top: 8px; 
+  margin-top: 8px;
 
 }
 // .privateHeaderBold {
@@ -187,7 +204,10 @@ p-button span {
     height: 400px;
     width: 100%;
 }
-
+.surface-card {
+    max-width: 400px;
+    min-width: 250px;
+}
 
 .layout-topbar .layout-topbar-menu ul {
     display: flex !important;
