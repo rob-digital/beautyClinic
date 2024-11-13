@@ -26,6 +26,16 @@ background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
         padding-right: 14px;
     }
 }
+
+@keyframes gradient {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
 p-button span {
     font-weight: 600 !important;
 }
@@ -204,7 +214,7 @@ button {
     height: 400px;
     width: 100%;
 }
-.surface-card {
+.surface-card_treatment {
     max-width: 400px;
     min-width: 250px;
 }
